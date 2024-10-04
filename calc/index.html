@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>&#128466; Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header><h1>Calculator</h1></header>
+        <main>
+            <div id="simple-calc">
+                <p style="font-style: italic; color: lightgray;">SIMPLE version</p>
+                <div class="simple-display">
+                    <p class="display-header">
+                        <span id="ops"> </span>
+                        <span id="num" style="opacity: 1;"></span>
+                        <span id="m"></span>
+                    </p>
+                    <span id="display">0</span>
+                </div>
+                <div class="simple-button-group">
+
+                    <!--1 row-->
+
+                    <button class="simple-calc-button redbutton" onclick="funcCalc('ac')">AC</button>
+                    <button class="simple-calc-button" onclick="funcCalc('m')">M</button>
+                    <button class="simple-calc-button" onclick="funcCalc('ml')"><sup>M</sup><sub>load</sub></button>
+                    <button class="simple-calc-button" onclick="opsCalc('mod')">mod</button>
+                    <button class="simple-calc-button redbutton" onclick="funcCalc('<')">&#9003;</button>
+                    <br>
+
+                    <!--2 row-->
+
+                    <button class="simple-calc-button" onclick="numCalc(7)">7</button>
+                    <button class="simple-calc-button" onclick="numCalc(8)">8</button>
+                    <button class="simple-calc-button" onclick="numCalc(9)">9</button>
+                    <button class="simple-calc-button" onclick="opsCalc('/')">÷</button>
+                    <button class="simple-calc-button" onclick="opsCalc('r')">√</button>
+                    <br>
+
+                    <!--3 row-->
+
+                    <button class="simple-calc-button" onclick="numCalc(4)">4</button>
+                    <button class="simple-calc-button" onclick="numCalc(5)">5</button>
+                    <button class="simple-calc-button" onclick="numCalc(6)">6</button>
+                    <button class="simple-calc-button" onclick="opsCalc('*')">x</button>
+                    <button class="simple-calc-button" onclick="opsCalc('**')">X<sup>y</sup></button>
+                    <br>
+
+                    <!--4 row-->
+
+                    <button class="simple-calc-button" onclick="numCalc(1)">1</button>
+                    <button class="simple-calc-button" onclick="numCalc(2)">2</button>
+                    <button class="simple-calc-button" onclick="numCalc(3)">3</button>
+                    <button class="simple-calc-button" onclick="opsCalc('-')">-</button>
+                    <br>
+
+                    <!--5 row-->
+
+                    <button class="simple-calc-button" onclick="numCalc(0)">0</button>
+                    <button class="simple-calc-button" onclick="numCalc('.')">.</button>
+                    <button class="simple-calc-button" onclick="opsCalc('%')">%</button>
+                    <button class="simple-calc-button" onclick="opsCalc('+')">+</button>
+                    <button class="simple-calc-button equalbutton" onclick="equalCalc()">=</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

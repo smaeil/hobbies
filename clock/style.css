@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0 ;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: grayscale(100%) brightness(110%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    top: 0; right:0 ; bottom: 0; left: 0;
+    flex-direction: row;
+}
+
+header {
+    width: 70vw;
+    height: 10vh;
+}
+
+h1 {
+    margin: 0.9rem 0;
+    font-size: 2.3rem;
+    letter-spacing: -0.1rem;
+}
+
+p {
+    margin: 0.2rem 0;
+}
+
+
+.digi-clock {
+    font-size: 3.2rem;
+}
+
+.half-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 50vw;
+}
+
+.clock-face {
+    height: 20rem;
+    aspect-ratio: 1;
+    border:2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.second-hand {
+    background: linear-gradient(0deg, transparent 40%, red 40%);
+    height: 18rem;
+    width: 0.2rem;
+    position: absolute;
+}
+
+.minute-hand {
+    background: linear-gradient(0deg, transparent 40%, black 40%);
+    height: 16rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.hour-hand {
+    background: linear-gradient(0deg, transparent 40%, black 40%);
+    height: 10rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+footer {
+    height: 10vh;
+    width: 70vw;
+    font-size: 0.7rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+}
+
+@media screen and (orientation: portrait) {
+    .main {
+        flex-direction: column;
+    }
+
+    .half-page {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    header {
+        height: 1vh;
+    }
+
+    footer {
+        height: 19vh;
+    }
+
+    body {
+        background-position: -22rem;
+    }
+}
